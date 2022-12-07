@@ -12,6 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <!-- ANIMATE.CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Blizzard</title>
   </head>
   <body>
@@ -34,7 +39,7 @@
           </ul>
           <div class="login_buttons">
             <button id="signup_button">Criar Conta</button>
-            <button id="login_button">
+            <button id="login_button" onclick="modalToggle()">
               <img src="../assets/icons/Group 14.svg" alt="login icon" />
             </button>
           </div>
@@ -46,6 +51,51 @@
             </button>
           </div>
         </header>
+      </div>
+    </div>
+    <!-- LOGIN MODAL -->
+    <div id="modal" class="modal">
+      <div class="modal_content">
+        <div class="close_div">
+          <span id="close">&times;</span>
+        </div>
+        <div class="battlenet_logo">
+          <img src="../assets/logo-battle-net.png" alt="" />
+        </div>
+        <form>
+          <input
+            type="email"
+            placeholder="E-mail ou telefone"
+            class="email_input"
+          />
+          <input type="password" placeholder="Senha" class="password_input" />
+
+          <button type="button" id="battlenet_button">Conectar-se</button>
+          <span>ou conecte-se com</span>
+
+          <div class="social_media_buttons">
+            <button type="button">
+              <img src="../assets/icons/google.svg" alt="Google icon" />
+            </button>
+            <button type="button">
+              <img src="../assets/icons/apple.svg" alt="Apple icon" />
+            </button>
+            <button type="button">
+              <img src="../assets/icons/facebook.svg" alt="Facebook icon" />
+            </button>
+          </div>
+
+          <div class="conecte-se">
+            <div>
+              <a href="#">Crie uma conta </a>
+            </div>
+            <div>
+              <span>Battle.net de graça</span>
+            </div>
+          </div>
+
+          <a href="#">Não consegue logar?</a>
+        </form>
       </div>
     </div>
     <script src="../script/index.js"></script>

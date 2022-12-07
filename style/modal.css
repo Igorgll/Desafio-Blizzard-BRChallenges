@@ -1,0 +1,158 @@
+.modal {
+  display: none;
+  position: absolute;
+
+  top: 15%;
+  left: 33%;
+  margin: -25px 0 0 -25px;
+
+  z-index: 1;
+  width: 696px;
+  height: 600px;
+  border-radius: 4px;
+
+  padding: 12px 28px;
+
+  margin: auto;
+
+  background: radial-gradient(
+      59% 72.28% at 25.36% 25.95%,
+      rgba(2, 2, 3, 0) 0%,
+      #020203 95%
+    ),
+    url("../assets/modalBg.png");
+}
+
+@media (max-width: 1440px) {
+  .modal {
+    left: 25%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .modal {
+    left: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal {
+    width: 530px;
+  }
+}
+
+.modal_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+
+  gap: 1.5rem;
+}
+
+.modal_content span {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+#battlenet_button {
+  width: 426px;
+  height: 48px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  border-radius: 4px;
+
+  margin-bottom: 1rem;
+
+  color: var(--white);
+  background: var(--button);
+}
+
+.modal_content form input {
+  width: 426px;
+  height: 48px;
+
+  padding: 0 15px;
+
+  border: none;
+  border-radius: 4px;
+}
+
+.email_input::placeholder,
+.password_input::placeholder {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.social_media_buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.social_media_buttons button {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 4px;
+}
+
+.social_media_buttons button:first-child img {
+  padding-top: 7px;
+}
+
+.social_media_buttons button:nth-child(2) img {
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+.social_media_buttons button:nth-child(3) img {
+  padding-top: 5px;
+}
+
+.conecte-se {
+  display: flex;
+  flex-direction: row;
+}
+
+.conecte-se span {
+  margin-left: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.close_div {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#close {
+  color: var(--button);
+  float: right;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+#close:hover,
+#close:focus {
+  cursor: pointer;
+}
+
+.battlenet_logo {
+  margin-top: 1rem;
+}

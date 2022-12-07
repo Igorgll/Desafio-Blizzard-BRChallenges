@@ -9,7 +9,13 @@
 }
 
 .main {
-  background: url("../assets/banner-hero/games/diablo-bg.png");
+  background: radial-gradient(
+      72.28% 72.28% at 52.36% 25.95%,
+      rgba(2, 2, 3, 0) 0%,
+      #020203 100%
+    ),
+    url("../assets/banner-hero/games/diablo-bg.png");
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -81,71 +87,92 @@
   background: var(--button);
 }
 
+#login_button::after {
+  content: "Logar";
+}
+
 #login_button img {
   padding-right: 5px;
 }
 
-#first_section {
-  padding: 0px 267px;
+@media (max-width: 1440px) {
+  .app header {
+    padding: 0 130px;
+  }
 
-  height: 70vh;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  .button_menu {
+    display: none;
+  }
 }
 
-.game_icons {
-  display: flex;
-  align-items: flex-start;
+@media (max-width: 1024px) {
+  .app header {
+    padding: 0 50px;
+  }
+
+  .button_menu {
+    display: none;
+  }
 }
 
-.game_icons ul {
-  list-style: none;
-  color: var(--white);
+@media (max-width: 768px) {
+  .main ul {
+    display: none !important;
+  }
+
+  .mobile_menu {
+    margin-left: 6rem;
+  }
+
+  .button_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 8px;
+
+    width: 55px;
+    z-index: 2;
+
+    background: transparent;
+  }
+
+  .button_menu span {
+    width: 60%;
+    height: 2px;
+
+    border-radius: 6px;
+
+    display: block;
+    background: var(--white);
+
+    transition: all 0.6s;
+  }
 }
 
-.title_div {
-    margin: auto;
+@media (max-width: 425px) {
+  .main {
+    background-position: 43%;
+  }
+
+  .main header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+  }
+
+  .login_buttons {
+    display: none;
+  }
 }
 
-.title_div h1 {
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 110.2%;
-
-  max-width: 562px;
-  color: var(--white);
+@media (max-width: 375px) {
+  .main {
+    background-position: 43%;
+  }
 }
 
-.title_div p {
-  margin-top: 1rem;
-
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-  letter-spacing: -0.05rem;
-
-  color: var(--white);
-}
-
-.jogue_agora_button {
-  margin-top: 1.5rem;
-}
-
-.jogue_agora_button button {
-  padding: 14px 32px;
-  background: var(--button);
-  border-radius: 4px;
-
-  width: 168px;
-  height: 52px;
-
-  font-weight: 600;
-  color: var(--white);
-}
-
-.teaser_div {
-  display: flex;
-  justify-content: end;
+@media (max-width: 320px) {
+  .main {
+    background-position: 46%;
+  }
 }

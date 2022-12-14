@@ -1,0 +1,152 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+
+  position: absolute;
+  top: 25%;
+
+  padding: 0 267px;
+}
+
+.first_row ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  margin-top: 40px;
+}
+
+.second_row {
+  color: var(--white);
+  max-width: 562px;
+}
+
+.second_row h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110.2%;
+  margin-bottom: 16px;
+}
+
+.second_row p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.005rem;
+  margin-bottom: 28px;
+}
+
+.second_row button {
+  background: var(--button);
+
+  width: 168px;
+  height: 52px;
+
+  padding: 14px 32px;
+  border-radius: 4px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white);
+
+  transition: ease 0.8s;
+}
+
+.second_row button:hover {
+  background: #4dc7ff;
+}
+
+.third_row {
+  margin-left: auto;
+  position: relative;
+}
+
+.third_row p {
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: end;
+  margin-top: 84px;
+  margin-bottom: 16px;
+}
+
+.play_button {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 130px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 50px;
+    grid-template-columns: 140px 2fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .first_row {
+    margin-top: 46px;
+  }
+
+  .first_row ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .second_row {
+    z-index: 9;
+  }
+
+  .second_row img {
+    float: right;
+    margin-left: 2rem;
+  }
+
+  .third_row {
+    display: none;
+  }
+
+  .third_row p {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 0 22px;
+    top: 18%;
+  }
+
+  .first_row ul {
+    gap: 1.5rem;
+  }
+
+  .second_row h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .first_row ul {
+    gap: 10px;
+  }
+}

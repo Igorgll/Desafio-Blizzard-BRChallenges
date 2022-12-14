@@ -1,0 +1,248 @@
+.games_section {
+  display: flex;
+  flex-direction: column;
+  background: var(--dark);
+  width: 100%;
+  height: auto;
+  padding: 0 267px;
+}
+
+.titles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.titles h4 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110.2%;
+  max-width: 175px;
+  color: var(--white);
+  margin-left: 180px;
+}
+
+.titles span {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--gray);
+  text-transform: uppercase;
+  padding-bottom: 35px;
+}
+
+.titles ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  list-style: none;
+  margin-left: 150px;
+  padding-top: 40px;
+}
+
+.ver_todos_jogos {
+  display: flex;
+  margin-left: auto;
+  padding-top: 40px;
+}
+
+.ver_todos_jogos p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 10px;
+  color: var(--button);
+}
+
+.games {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.games figure {
+  padding-left: 8px;
+}
+
+.games figcaption {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 19.35px;
+  line-height: 29px;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
+.games span {
+  font-weight: 400;
+  font-size: 15.05px;
+  line-height: 23px;
+  opacity: 0.8;
+  color: var(--gray);
+}
+
+.last_figure {
+  border: 1.6125px solid #212428;
+  border-radius: 4.3px;
+  width: 301px;
+  height: 414px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+
+#last_figure_text {
+  display: flex;
+  flex-direction: row;
+  margin-top: 35px;
+}
+
+#last_figure_text p {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 17.2px;
+  line-height: 26px;
+  margin-left: 10px;
+}
+
+@media (max-width: 1440px) {
+  .games_section {
+    padding: 0 130px;
+  }
+
+  .games figure img {
+    width: 280px;
+  }
+
+  .last_figure {
+    width: 280px;
+    height: 385.11px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .games_section {
+    padding: 0 50px;
+  }
+
+  .games {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .titles span {
+    display: none;
+  }
+
+  .titles h4 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .games figure img {
+    width: 206.76px;
+    height: 283.13px;
+  }
+
+  .games figure {
+    width: 202px;
+  }
+
+  .games figcaption {
+    font-size: 16px;
+  }
+
+  .games figcaption span {
+    font-size: 14px;
+  }
+
+  .last_figure {
+    width: 206.76px;
+    height: 283.13px;
+  }
+
+  #last_figure_text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .games_section {
+    padding: 0 22px;
+  }
+
+  .games {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .titles ul {
+    display: none;
+  }
+
+  .games figcaption {
+    display: none;
+  }
+
+  .games figure {
+    margin-bottom: 20px;
+  }
+
+  .games figure img {
+    width: 158.88px;
+    height: 217.55px;
+  }
+
+  .last_figure {
+    width: 158.88px;
+    height: 217.55px;
+  }
+
+  .last_figure img {
+    width: 69.23px;
+    height: 31.91px;
+  }
+
+  #last_figure_text {
+    margin-top: 15px;
+  }
+
+  #last_figure_text p {
+    font-size: 14px;
+  }
+
+  #last_figure_text img {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .games figure {
+    width: 170px;
+  }
+}
+
+@media (max-width: 320px) {
+  .games {
+    grid-template-columns: 1fr;
+  }
+
+  .games figure {
+    padding-left: 60px;
+  }
+
+  .last_figure {
+    margin-left: 60px;
+  }
+
+  .ver_todos_jogos {
+    display: none;
+  }
+
+  .titles h4 {
+    font-size: 22px;
+  }
+}

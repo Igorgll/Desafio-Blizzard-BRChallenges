@@ -81,10 +81,21 @@
   margin-right: 0.8rem;
 
   border: 0.788462px solid #ffffff;
+  transition: ease 0.8s;
+}
+
+#signup_button:hover {
+  background: var(--white);
+  color: #000;
 }
 
 #login_button {
   background: var(--button);
+  transition: ease 0.8s;
+}
+
+#login_button:hover {
+  background: #4dc7ff;
 }
 
 #login_button::after {
@@ -116,7 +127,7 @@
 }
 
 @media (max-width: 768px) {
-  .main ul {
+  header ul {
     display: none !important;
   }
 
@@ -157,7 +168,7 @@
   .main header {
     display: flex;
     justify-content: space-between;
-    padding: 0 25px;
+    padding: 0 22px;
   }
 
   .login_buttons {

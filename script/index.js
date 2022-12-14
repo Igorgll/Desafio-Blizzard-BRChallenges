@@ -2,12 +2,10 @@ const modal = document.getElementById("modal");
 const closeModal = document.getElementById("close");
 const loginButton = document.getElementById("login_button");
 
-loginButton.onclick = function () {
-  modal.style.display = "block";
-  modal.classList.toggle("active");
-};
+function showModal() {
+  modal.classList.add("active");
+}
 
-closeModal.onclick = function () {
+function hideModal() {
   modal.classList.remove("active");
-  modal.style.display = "none";
-};
+}

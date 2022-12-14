@@ -4,7 +4,7 @@
   background: var(--dark);
   width: 100%;
   height: auto;
-  padding: 0 267px;
+  padding: 0 170px;
 }
 
 .titles {
@@ -60,6 +60,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
   margin-top: 80px;
+  margin-bottom: 75px;
 }
 
 .games figure {

@@ -1,0 +1,166 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+
+  padding: 0 0 0 170px;
+
+  width: 100%;
+  height: 852px;
+
+  background: url("../assets/footer-background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.footer_text {
+  margin: auto 0;
+}
+
+#battlenet_img {
+  margin-bottom: 20px;
+}
+
+.footer_text h5 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110.2%;
+  margin-bottom: 25px;
+  color: var(--white);
+}
+
+.footer_text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.footer_text span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 178.2%;
+  padding-left: 15px;
+  color: var(--gray);
+}
+
+.footer_text button {
+  width: 266px;
+  height: 52px;
+  padding: 14px 32px;
+  border-radius: 4px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--white);
+  background: var(--button);
+
+  margin-bottom: 35px;
+}
+
+.footer_text p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+
+  max-width: 258px;
+  color: var(--white);
+}
+
+.footer__ {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__ p {
+  margin-left: 20px;
+}
+
+.footer__ a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.ilustration_div {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#ilustration_big {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+#ilustration_mini {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 42%;
+  left: 31%;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 1440px) {
+  .footer {
+    padding: 0 0 0 130px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer {
+    padding: 0 0 0 50px;
+  }
+
+  #ilustration_big {
+    left: 20%;
+  }
+
+  #ilustration_mini {
+    left: 26%;
+  }
+}
+
+@media (max-width: 768px) {
+  #ilustration_big {
+    left: 45%;
+  }
+
+  #ilustration_mini {
+    left: 26%;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer {
+    padding: 0 0 0 22px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_text {
+    margin-top: 70px;
+    margin-bottom: 0;
+  }
+
+  #ilustration_big {
+    width: 200%;
+    height: auto;
+    left: 20%;
+  }
+
+  #ilustration_mini {
+    width: 150%;
+    left: 20%;
+    top: 45%;
+  }
+}

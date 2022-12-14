@@ -1,11 +1,12 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
+  width: 100%;
 
   position: absolute;
   top: 25%;
 
-  padding: 0 267px;
+  padding: 0 170px;
 }
 
 .first_row ul {

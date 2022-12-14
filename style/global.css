@@ -1,6 +1,7 @@
 @import url("../style/header.css");
 @import url("../style/modal.css");
 @import url("../style/first_section.css");
+@import url("../style/games_section.css");
 
 * {
   margin: 0;
@@ -27,7 +28,8 @@
   --white: #ffffff;
   --light: #e5e5e5;
   --button: #00aeff;
-  /* --button: #3ec2ff; */
+  --dark: #020203;
+  --gray: #8f9199;
 }
 
 body,

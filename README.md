@@ -24,7 +24,7 @@ Para facilitar a codificação do projeto foi usado um protótipo do figma como 
 
 - [x]  Criar as seções: **Menu**, **Banner hero**, **Footer**.
 
-- []  O texto e o ícone do botão “Baixar jogo” devem ser alterados conforme o sistema operacional do usuário que estiver acessando a página. ( [material de apoio](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent))
+- [ ]  O texto e o ícone do botão “Baixar jogo” devem ser alterados conforme o sistema operacional do usuário que estiver acessando a página. ( [material de apoio](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent))
 
 - [x]  Aplicar efeito de *hover* nas opções do menu de navegação.
 
@@ -35,7 +35,7 @@ Para facilitar a codificação do projeto foi usado um protótipo do figma como 
 
 - [ ]  Todos os requisitos do nivel fácil.
 
-- [ ]  Criar as seções: **Menu**, **Banner hero**, **Jogos Exclusivo**, **Footer**.
+- [x]  Criar as seções: **Menu**, **Banner hero**, **Jogos Exclusivo**, **Footer**.
 
 - [ ]  Buscar a lista de jogos via api. ([acessar endpoint](https://api-brchallenges.vercel.app/api/blizzard/games))
 
@@ -47,7 +47,7 @@ Para facilitar a codificação do projeto foi usado um protótipo do figma como 
 
 - [ ]  Todos os requisitos do nivel fácil e médio.
 
-- [ ]  Ao clicar no botão **Logar** do menu de navegação, deverá ser exibido o modal de login.
+- [x]  Ao clicar no botão **Logar** do menu de navegação, deverá ser exibido o modal de login.
 
 - [ ]  Criar componente de *dropdown* para as opções **Jogos** e **Esportes** do menu de navegação.
 

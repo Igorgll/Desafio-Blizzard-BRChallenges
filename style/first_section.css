@@ -75,12 +75,46 @@
   margin-bottom: 16px;
 }
 
-.play_button {
+.animation_cover {
+  width: 280px;
+  height: 158px;
+
+  background: url("../assets/banner-hero/games/diablo-animation-cover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 4px;
+
+  position: relative;
+}
+
+.animation_cover button {
   position: absolute;
-  top: 80%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+
+  width: 51px;
+  height: 51px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    136.72deg,
+    rgba(7, 7, 10, 0.86) 19.22%,
+    rgba(15, 16, 22, 0.5) 76.59%
+  );
+  backdrop-filter: blur(1.5px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation_cover button img {
+  padding-left: 5px;
 }
 
 @media (max-width: 1440px) {
@@ -110,7 +144,7 @@
   .first_row ul {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 20px;
   }
 
   .second_row {
@@ -122,19 +156,25 @@
     margin-left: 2rem;
   }
 
-  .third_row {
+  .diablo_logo {
     display: none;
   }
 
   .third_row p {
     display: none;
   }
+
+  .animation_cover {
+    position: absolute;
+    right: 0;
+    margin-top: 21rem;
+  }
 }
 
 @media (max-width: 425px) {
   .container {
     padding: 0 22px;
-    top: 18%;
+    top: 25%;
   }
 
   .first_row ul {
@@ -144,9 +184,13 @@
   .second_row h1 {
     font-size: 40px;
   }
+
+  .third_row {
+    display: none;
+  }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 320px) {
   .first_row ul {
     gap: 10px;
   }

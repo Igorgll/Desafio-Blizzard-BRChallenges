@@ -22,13 +22,13 @@ Para facilitar a codificação do projeto foi usado um protótipo do figma como 
 
 ### Nível Fácil
 
-- [ ]  Criar as seções: **Menu**, **Banner hero**, **Footer**.
+- [x]  Criar as seções: **Menu**, **Banner hero**, **Footer**.
 
-- [ ]  O texto e o ícone do botão “Baixar jogo” devem ser alterados conforme o sistema operacional do usuário que estiver acessando a página. ( [material de apoio](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent))
+- []  O texto e o ícone do botão “Baixar jogo” devem ser alterados conforme o sistema operacional do usuário que estiver acessando a página. ( [material de apoio](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent))
 
-- [ ]  Aplicar efeito de *hover* nas opções do menu de navegação.
+- [x]  Aplicar efeito de *hover* nas opções do menu de navegação.
 
-- [ ]  Aplicar responsividade para as seguintes resoluções: 1920px, 1440px, 768px e 375px.
+- [x]  Aplicar responsividade para as seguintes resoluções: 1920px, 1440px, 768px e 375px.
 
 ### Nível Médio
 ### 

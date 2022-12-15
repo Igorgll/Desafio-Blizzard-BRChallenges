@@ -12,10 +12,14 @@
   background-position: center center;
   background-size: cover;
   object-fit: cover;
+  position: relative;
 }
 
 .footer_text {
   margin: auto 0;
+  position: absolute;
+  top: 20%;
+  z-index: 2;
 }
 
 #battlenet_img {
@@ -99,6 +103,8 @@
   width: auto;
   height: auto;
   position: relative;
+  left: 6%;
+  z-index: 1;
 }
 
 #ilustration_mini {
@@ -106,14 +112,23 @@
   height: auto;
   position: absolute;
   top: 42%;
-  left: 31%;
+  left: 38%;
   bottom: 0;
   right: 0;
+  z-index: 2;
 }
 
 @media (max-width: 1440px) {
   .footer {
     padding: 0 0 0 130px;
+  }
+
+  #ilustration_big {
+    left: 13%;
+  }
+
+  #ilustration_mini {
+    left: 42%;
   }
 }
 @media (max-width: 1024px) {
@@ -122,21 +137,21 @@
   }
 
   #ilustration_big {
-    left: 20%;
+    left: 33%;
   }
 
   #ilustration_mini {
-    left: 26%;
+    left: 55%;
   }
 }
 
 @media (max-width: 768px) {
   #ilustration_big {
-    left: 45%;
+    left: 60%;
   }
 
   #ilustration_mini {
-    left: 26%;
+    left: 67%;
   }
 }
 
@@ -150,17 +165,41 @@
   .footer_text {
     margin-top: 70px;
     margin-bottom: 0;
+    top: 0;
+  }
+
+  .ilustration_div {
+    margin: 0;
   }
 
   #ilustration_big {
     width: 200%;
     height: auto;
     left: 20%;
+    margin-top: 450px;
   }
 
   #ilustration_mini {
     width: 150%;
     left: 20%;
     top: 45%;
+    z-index: 1;
+    margin-top: 260px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer_text {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer_text {
+    margin-top: 1rem;
+  }
+
+  #ilustration_big {
+    margin-top: 500px;
   }
 }

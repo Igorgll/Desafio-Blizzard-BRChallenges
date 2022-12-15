@@ -24,7 +24,7 @@ Para facilitar a codificação do projeto foi usado um protótipo do figma como 
 
 - [x]  Criar as seções: **Menu**, **Banner hero**, **Footer**.
 
-- [ ]  O texto e o ícone do botão “Baixar jogo” devem ser alterados conforme o sistema operacional do usuário que estiver acessando a página. ( [material de apoio](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent))
+- [x]  O texto e o ícone do botão “Baixar jogo” devem ser alterados conforme o sistema operacional do usuário que estiver acessando a página. ( [material de apoio](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent))
 
 - [x]  Aplicar efeito de *hover* nas opções do menu de navegação.
 
@@ -33,11 +33,11 @@ Para facilitar a codificação do projeto foi usado um protótipo do figma como 
 ### Nível Médio
 ### 
 
-- [ ]  Todos os requisitos do nivel fácil.
+- [x]  Todos os requisitos do nivel fácil.
 
 - [x]  Criar as seções: **Menu**, **Banner hero**, **Jogos Exclusivo**, **Footer**.
 
-- [ ]  Buscar a lista de jogos via api. ([acessar endpoint](https://api-brchallenges.vercel.app/api/blizzard/games))
+- [x]  Buscar a lista de jogos via api. ([acessar endpoint](https://api-brchallenges.vercel.app/api/blizzard/games))
 
 - [ ]  Aplicar efeito de hover nas imagens dos jogos da seção **Jogos Exclusivos**.
 

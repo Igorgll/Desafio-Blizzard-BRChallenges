@@ -67,6 +67,10 @@
   padding-left: 8px;
 }
 
+.games figure img {
+  border-radius: 4.3px;
+}
+
 .games figcaption {
   color: var(--white);
   font-weight: 600;

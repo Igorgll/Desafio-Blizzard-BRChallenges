@@ -8,11 +8,13 @@ fetch(api)
   .then((data) => {
     console.log(data);
     const list = document.getElementById("games_list");
-    const last_figure = document.querySelector(".last_figure");
 
     for (const item of data) {
       const figure = document.createElement("figure");
-      figure.innerHTML = `<img src=${item.image}> 
+      figure.innerHTML = `<div class="game_pics"> 
+      <img src=${item.image} id="game_bg"/>
+      <img src=${item.logo} id="game_logo"/>
+      </div>
       <figcaption>${item.name}
       <br>
       <span>${item.category}</span>

@@ -18,6 +18,25 @@
   margin-top: 40px;
 }
 
+.first_row ul li {
+  width: 48px;
+  height: 48px;
+}
+
+.first_row li img {
+  cursor: pointer;
+  filter: grayscale(1);
+  transition: all 0.5s;
+}
+
+.first_row li img.active_game {
+  filter: grayscale(0);
+}
+
+.disabled {
+  pointer-events: none;
+}
+
 .second_row {
   color: var(--white);
   max-width: 562px;

@@ -39,7 +39,7 @@ Para facilitar a codificação do projeto foi usado um protótipo do figma como 
 
 - [x]  Buscar a lista de jogos via api. ([acessar endpoint](https://api-brchallenges.vercel.app/api/blizzard/games))
 
-- [ ]  Aplicar efeito de hover nas imagens dos jogos da seção **Jogos Exclusivos**.
+- [x]  Aplicar efeito de hover nas imagens dos jogos da seção **Jogos Exclusivos**.
 
 - [ ]  Alterar as informações da seção **Banner Hero** ao selecionar uma opção no menu lateral. Os jogos disponíveis são **Diablo**, **HearthStone** e **World of Warcraft**.
 

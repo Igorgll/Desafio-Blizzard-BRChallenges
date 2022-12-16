@@ -101,7 +101,7 @@
 }
 
 #game_bg:hover {
-  transform: scale(1.15) translateY(-3%);
+  transform: translateY(-3%) scale(1.12);
   background: linear-gradient(transparent, #000);
 }
 

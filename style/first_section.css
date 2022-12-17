@@ -33,6 +33,10 @@
   filter: grayscale(0);
 }
 
+.first_row li img:hover {
+  filter: grayscale(60%);
+}
+
 .disabled {
   pointer-events: none;
 }
@@ -57,10 +61,10 @@
   margin-bottom: 28px;
 }
 
-.second_row button {
+#bannerHero_button {
   background: var(--button);
 
-  width: 168px;
+  width: auto;
   height: 52px;
 
   padding: 14px 32px;
@@ -70,6 +74,9 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--white);
+
+  display: flex;
+  flex-direction: row;
 
   transition: ease 0.8s;
 }

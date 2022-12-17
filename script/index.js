@@ -6,6 +6,7 @@ const banner_hero = document.querySelector(".main");
 const game_icons = document.getElementById("game_icons");
 const game_title = document.getElementById("title");
 const game_subtitle = document.getElementById("subtitle");
+const button = document.getElementById("bannerHero_button");
 
 const games_list = [
   {
@@ -15,6 +16,7 @@ const games_list = [
     ), url("./assets/banner-hero/games/diablo-bg.png")`,
     title: "Retorne à escuridão com o game Diablo IV",
     subtitle: "O retorno de Lilith traz uma era de escuridão e sofrimento",
+    button: "Jogar agora",
   },
 
   {
@@ -24,6 +26,7 @@ const games_list = [
   ), url("./assets/banner-hero/games/hearthstone-bg.png")`,
     title: "Novo pacote de expansão de Hearthstone",
     subtitle: "A Horda e a Aliança se encontraram no Vale Alterac para lutar",
+    button: "Reserve agora na pré-venda",
   },
 
   {
@@ -33,6 +36,7 @@ const games_list = [
   ), url("./assets/banner-hero/games/wow-bg.png")`,
     title: "Desbrave as Terras Sombrias em Shadowlands!",
     subtitle: "O que jaz além do mundo que você conhece?",
+    button: "Reserve agora na pré-venda",
   },
 ];
 
@@ -40,11 +44,8 @@ const games_list = [
 banner_hero.style.backgroundImage = games_list[0].background;
 game_title.innerHTML = games_list[0].title;
 game_subtitle.innerHTML = games_list[0].subtitle;
-
-const first_game = game_icons.firstElementChild;
-const first_game_img = first_game.querySelector("img");
-first_game_img.style.filter = "grayscale(0)";
-console.log(first_game_img);
+button.innerHTML = games_list[0].button;
+game_icons.children[0].firstElementChild.classList.add("active_game");
 
 game_icons.addEventListener("click", (event) => {
   if (
@@ -53,13 +54,20 @@ game_icons.addEventListener("click", (event) => {
     event.target.parentNode.tagName === "LI"
   ) {
     const active_game = event.target;
+
+    const listItems = game_icons.querySelectorAll("li img"); // checks if any of li img has "active_game", if so remove it and add it to the event.target
+    listItems.forEach(function (img) {
+      img.classList.remove("active_game");
+    });
+
     const id = active_game.getAttribute("data-id");
     const item = games_list.find((item) => item.id === parseInt(id, 10));
+    active_game.classList.add("active_game");
 
     banner_hero.style.backgroundImage = item.background;
-
     game_title.innerHTML = item.title;
     game_subtitle.innerHTML = item.subtitle;
+    button.innerHTML = item.button;
   }
 });
 

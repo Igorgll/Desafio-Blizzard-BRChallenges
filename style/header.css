@@ -9,12 +9,12 @@
 }
 
 .main {
-  background: radial-gradient(
+  /* background: radial-gradient(
       72.28% 72.28% at 52.36% 25.95%,
       rgba(2, 2, 3, 0) 0%,
       #020203 100%
     ),
-    url("../assets/banner-hero/games/diablo-bg.png");
+    url("../assets/banner-hero/games/diablo-bg.png"); */
 
   background-repeat: no-repeat;
   background-position: center center;

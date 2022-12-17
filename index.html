@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.ico" />
     <link rel="stylesheet" href="../style/global.css" />
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -102,42 +103,52 @@
         </section>
         <div class="container">
           <div class="first_row">
-            <ul>
+            <ul id="game_icons">
               <li>
                 <img
                   src="../assets/banner-hero/icons/game-1.png"
                   alt="game 1 icon"
+                  id ="game_icon_img"
+                  data-id="1"
                 />
               </li>
               <li>
                 <img
                   src="../assets/banner-hero/icons/game-2.png"
                   alt="game 2 icon"
+                  id ="game_icon_img"
+                  data-id="2"
                 />
               </li>
               <li>
                 <img
                   src="../assets/banner-hero/icons/game-3.png"
                   alt="game 3 icon"
-                />
+                  id ="game_icon_img"
+                  data-id="3"
+                  />
               </li>
               <li>
                 <img
                   src="../assets/banner-hero/icons/game-4.png"
                   alt="game 4 icon"
+                  id ="game_icon_img"
+                  class="disabled"
                 />
               </li>
               <li>
                 <img
                   src="../assets/banner-hero/icons/game-5.png"
                   alt="game 5 icon"
+                  id ="game_icon_img"
+                  class="disabled"
                 />
               </li>
             </ul>
           </div>
           <div class="second_row">
-            <h1>Retorne à escuridão com o game Diablo IV</h1>
-            <p>O retorno de Lilith traz uma era de escuridão e sofrimento</p>
+            <h1 id="title"></h1>
+            <p id="subtitle"></p>
             <button>Jogue agora</button>
           </div>
           <div class="third_row">

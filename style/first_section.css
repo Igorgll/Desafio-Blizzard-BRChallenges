@@ -43,7 +43,7 @@
 
 .second_row {
   color: var(--white);
-  max-width: 562px;
+  max-width: 626px;
 }
 
 .second_row h1 {
@@ -80,8 +80,11 @@
 
   transition: ease 0.8s;
 }
+#bannerHero_button img {
+  padding-right: 10px;
+}
 
-.second_row button:hover {
+#bannerHero_button:hover {
   background: #4dc7ff;
 }
 
@@ -105,8 +108,6 @@
   width: 280px;
   height: 158px;
 
-  background: url("../assets/banner-hero/games/diablo-animation-cover.png");
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
@@ -182,7 +183,7 @@
     margin-left: 2rem;
   }
 
-  .diablo_logo {
+  .third_row img {
     display: none;
   }
 

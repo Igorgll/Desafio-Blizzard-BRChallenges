@@ -7,6 +7,8 @@ const game_icons = document.getElementById("game_icons");
 const game_title = document.getElementById("title");
 const game_subtitle = document.getElementById("subtitle");
 const button = document.getElementById("bannerHero_button");
+const game_logo_div = document.getElementById("game_logo_div");
+const animation_cover = document.getElementById("animation_cover");
 
 const games_list = [
   {
@@ -16,7 +18,12 @@ const games_list = [
     ), url("./assets/banner-hero/games/diablo-bg.png")`,
     title: "Retorne à escuridão com o game Diablo IV",
     subtitle: "O retorno de Lilith traz uma era de escuridão e sofrimento",
-    button: "Jogar agora",
+    button:
+      '<img src="./assets/icons/user_icon.svg" alt="user icon"> Jogar agora',
+    logo: '<img src="./assets/banner-hero/games/diablo-logo.png" alt="Diablo logo">',
+    animation_cover:
+      'url("./assets/banner-hero/games/diablo-animation-cover.png")',
+    gif: 'url("./assets/banner-hero/games/diablo-animation.gif")',
   },
 
   {
@@ -26,7 +33,12 @@ const games_list = [
   ), url("./assets/banner-hero/games/hearthstone-bg.png")`,
     title: "Novo pacote de expansão de Hearthstone",
     subtitle: "A Horda e a Aliança se encontraram no Vale Alterac para lutar",
-    button: "Reserve agora na pré-venda",
+    button:
+      '<img src="./assets/icons/user_icon.svg" alt="user icon">Reserve agora na pré-venda',
+    logo: '<img src="./assets/banner-hero/games/hearthstone-logo.png" alt="Diablo logo">',
+    animation_cover:
+      'url("./assets/banner-hero/games/hearthstone-animation-cover.png")',
+    gif: 'url("./assets/banner-hero/games/hearthstone-animation.gif")',
   },
 
   {
@@ -36,7 +48,12 @@ const games_list = [
   ), url("./assets/banner-hero/games/wow-bg.png")`,
     title: "Desbrave as Terras Sombrias em Shadowlands!",
     subtitle: "O que jaz além do mundo que você conhece?",
-    button: "Reserve agora na pré-venda",
+    button:
+      '<img src="./assets/icons/user_icon.svg" alt="user icon"> Reserve agora na pré-venda',
+    logo: '<img src="./assets/banner-hero/games/wow-logo.png" alt="Diablo logo">',
+    animation_cover:
+      'url("./assets/banner-hero/games/wow-animation-cover.png")',
+    gif: 'url("./assets/banner-hero/games/wow-animation_.gif")',
   },
 ];
 
@@ -45,7 +62,19 @@ banner_hero.style.backgroundImage = games_list[0].background;
 game_title.innerHTML = games_list[0].title;
 game_subtitle.innerHTML = games_list[0].subtitle;
 button.innerHTML = games_list[0].button;
+game_logo_div.innerHTML = games_list[0].logo;
+animation_cover.style.backgroundImage = games_list[0].animation_cover;
 game_icons.children[0].firstElementChild.classList.add("active_game");
+
+const gif = games_list[0].gif;
+
+animation_cover.addEventListener("mouseenter", () => {
+  animation_cover.style.backgroundImage = games_list[0].gif;
+});
+
+animation_cover.addEventListener("mouseleave", () => {
+  animation_cover.style.backgroundImage = games_list[0].animation_cover;
+});
 
 game_icons.addEventListener("click", (event) => {
   if (
@@ -68,6 +97,16 @@ game_icons.addEventListener("click", (event) => {
     game_title.innerHTML = item.title;
     game_subtitle.innerHTML = item.subtitle;
     button.innerHTML = item.button;
+    game_logo_div.innerHTML = item.logo;
+    animation_cover.style.backgroundImage = item.animation_cover;
+
+    animation_cover.addEventListener("mouseenter", () => {
+      animation_cover.style.backgroundImage = item.gif;
+    });
+
+    animation_cover.addEventListener("mouseleave", () => {
+      animation_cover.style.backgroundImage = item.animation_cover;
+    });
   }
 });
 

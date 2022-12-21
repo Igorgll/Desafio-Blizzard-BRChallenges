@@ -14,6 +14,26 @@
   outline: none;
 }
 
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  width: 12px;
+  box-shadow: inset 0 0 0.3rem #00000050;
+  background-color: #000;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+:root {
+  scrollbar-color: var(--white) #000 !important;
+  scrollbar-width: thin !important;
+}
+
 @media (max-width: 1080px) {
   html {
     font-size: 93.75%;

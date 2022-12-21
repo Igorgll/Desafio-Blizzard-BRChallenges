@@ -41,14 +41,14 @@ Para facilitar a codificação do projeto foi usado um protótipo do figma como 
 
 - [x]  Aplicar efeito de hover nas imagens dos jogos da seção **Jogos Exclusivos**.
 
-- [ ]  Alterar as informações da seção **Banner Hero** ao selecionar uma opção no menu lateral. Os jogos disponíveis são **Diablo**, **HearthStone** e **World of Warcraft**.
+- [x]  Alterar as informações da seção **Banner Hero** ao selecionar uma opção no menu lateral. Os jogos disponíveis são **Diablo**, **HearthStone** e **World of Warcraft**.
 
 ### Nível Difícil
 
-- [ ]  Todos os requisitos do nivel fácil e médio.
+- [x]  Todos os requisitos do nivel fácil e médio.
 
 - [x]  Ao clicar no botão **Logar** do menu de navegação, deverá ser exibido o modal de login.
 
 - [ ]  Criar componente de *dropdown* para as opções **Jogos** e **Esportes** do menu de navegação.
 
-- [ ]  Deverá ser executado um *gif* do jogo quando ocorrer o evento de *hover* na capa do trailer
+- [x]  Deverá ser executado um *gif* do jogo quando ocorrer o evento de *hover* na capa do trailer

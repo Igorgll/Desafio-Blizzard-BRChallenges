@@ -9,6 +9,7 @@ const game_subtitle = document.getElementById("subtitle");
 const button = document.getElementById("bannerHero_button");
 const game_logo_div = document.getElementById("game_logo_div");
 const animation_cover = document.getElementById("animation_cover");
+const play_button = document.getElementById("play_button");
 
 const games_list = [
   {
@@ -66,13 +67,13 @@ game_logo_div.innerHTML = games_list[0].logo;
 animation_cover.style.backgroundImage = games_list[0].animation_cover;
 game_icons.children[0].firstElementChild.classList.add("active_game");
 
-const gif = games_list[0].gif;
-
 animation_cover.addEventListener("mouseenter", () => {
+  play_button.style.display = "none";
   animation_cover.style.backgroundImage = games_list[0].gif;
 });
 
 animation_cover.addEventListener("mouseleave", () => {
+  play_button.style.display = "flex";
   animation_cover.style.backgroundImage = games_list[0].animation_cover;
 });
 
@@ -101,10 +102,12 @@ game_icons.addEventListener("click", (event) => {
     animation_cover.style.backgroundImage = item.animation_cover;
 
     animation_cover.addEventListener("mouseenter", () => {
+      play_button.style.display = "none";
       animation_cover.style.backgroundImage = item.gif;
     });
 
     animation_cover.addEventListener("mouseleave", () => {
+      play_button.style.display = "flex";
       animation_cover.style.backgroundImage = item.animation_cover;
     });
   }

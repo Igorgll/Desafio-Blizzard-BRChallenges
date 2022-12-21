@@ -107,6 +107,8 @@
 .animation_cover {
   width: 280px;
   height: 158px;
+  transition: all 0.4s;
+  float: right;
 
   background-size: cover;
   background-position: center;
@@ -138,6 +140,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: all 0.4s;
 }
 
 .animation_cover button img {
@@ -168,6 +172,10 @@
     margin-top: 46px;
   }
 
+  .first_row li img:hover {
+    filter: grayscale(0);
+  }
+
   .first_row ul {
     display: flex;
     flex-direction: row;
@@ -180,10 +188,9 @@
 
   .second_row img {
     float: right;
-    margin-left: 2rem;
   }
 
-  .third_row img {
+  #game_logo_div img {
     display: none;
   }
 
@@ -210,6 +217,10 @@
 
   .second_row h1 {
     font-size: 40px;
+  }
+
+  .second_row img {
+    margin: 0;
   }
 
   .third_row {

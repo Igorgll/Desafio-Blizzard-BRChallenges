@@ -1,6 +1,7 @@
 const modal = document.getElementById("modal");
 const closeModal = document.getElementById("close");
 const loginButton = document.getElementById("login_button");
+const overlay = document.querySelector(".modal_overlay");
 const api = "https://api-brchallenges.vercel.app/api/blizzard/games";
 const banner_hero = document.querySelector(".main");
 const game_icons = document.getElementById("game_icons");
@@ -9,6 +10,7 @@ const game_subtitle = document.getElementById("subtitle");
 const button = document.getElementById("bannerHero_button");
 const game_logo_div = document.getElementById("game_logo_div");
 const animation_cover = document.getElementById("animation_cover");
+const play_button = document.getElementById("play_button");
 
 const games_list = [
   {
@@ -66,13 +68,13 @@ game_logo_div.innerHTML = games_list[0].logo;
 animation_cover.style.backgroundImage = games_list[0].animation_cover;
 game_icons.children[0].firstElementChild.classList.add("active_game");
 
-const gif = games_list[0].gif;
-
 animation_cover.addEventListener("mouseenter", () => {
+  play_button.style.display = "none";
   animation_cover.style.backgroundImage = games_list[0].gif;
 });
 
 animation_cover.addEventListener("mouseleave", () => {
+  play_button.style.display = "flex";
   animation_cover.style.backgroundImage = games_list[0].animation_cover;
 });
 
@@ -101,10 +103,12 @@ game_icons.addEventListener("click", (event) => {
     animation_cover.style.backgroundImage = item.animation_cover;
 
     animation_cover.addEventListener("mouseenter", () => {
+      play_button.style.display = "none";
       animation_cover.style.backgroundImage = item.gif;
     });
 
     animation_cover.addEventListener("mouseleave", () => {
+      play_button.style.display = "flex";
       animation_cover.style.backgroundImage = item.animation_cover;
     });
   }
@@ -129,15 +133,29 @@ fetch(api)
 
       list.appendChild(figure);
     }
+
+      const last_div = document.createElement('div');
+      last_div.classList.add("last_figure");
+      last_div.innerHTML = '<img src="../assets/logo-blizzard.png" alt="blizzard icon"> <div id="last_figure_text"> <img src="../assets/icons/Group 5-white.svg" alt=""> <p>Ver todos jogos</p>';
+
+      list.appendChild(last_div);
   });
 
-function showModal() {
-  modal.classList.add("active");
-}
+// MODAL
+loginButton.addEventListener("click", () => {
+  modal.style.display = "block";
+  overlay.style.display = "block";
+});
 
-function hideModal() {
-  modal.classList.remove("active");
-}
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
+  overlay.style.display = "none";
+});
+
+overlay.addEventListener("click", () => {
+  modal.style.display = "none";
+  overlay.style.display = "none";
+})
 
 function detectOs() {
   // detects the user os and change the download button accordingly

@@ -1,18 +1,14 @@
 .modal {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 20%;
+  left: 30%;
   z-index: 10;
 
   width: 696px;
   height: 600px;
   border-radius: 4px;
 
-  margin: auto;
-  margin-top: 6rem;
   padding: 12px 28px;
 
   background: radial-gradient(
@@ -22,12 +18,19 @@
     ),
     url("../assets/modalBg.png");
 
-  transition: ease 0.6s;
+  transition: all 1s ease-in-out;
 }
 
-.modal.active {
-  display: block;
-  top: 10%;
+.modal_overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  transition: all 1s ease-in-out;
 }
 
 .modal_content {

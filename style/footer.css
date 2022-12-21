@@ -22,6 +22,10 @@
   z-index: 2;
 }
 
+.footer_text ul {
+  list-style: none;
+}
+
 #battlenet_img {
   margin-bottom: 20px;
 }

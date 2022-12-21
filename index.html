@@ -40,7 +40,7 @@
           </ul>
           <div class="login_buttons">
             <button id="signup_button">Criar Conta</button>
-            <button id="login_button" onclick="showModal()">
+            <button id="login_button">
               <img src="../assets/icons/Group 14.svg" alt="login icon" />
             </button>
           </div>
@@ -53,9 +53,10 @@
           </div>
         </header>
         <!-- LOGIN MODAL -->
+      <div class="modal_overlay"></div>
         <section id="modal" class="modal">
           <div class="modal_content">
-            <div class="close_div" onclick="hideModal()">
+            <div class="close_div">
               <span id="close">&times;</span>
             </div>
             <div class="battlenet_logo">
@@ -154,8 +155,10 @@
           <div class="third_row" id="third_row">
             <div id="game_logo_div"></div>
             <p>Assista o Trailer</p>
-              <div class="animation_cover" id="animation_cover">
-                <button type="button">
+              <div class="animation_cover"
+              id="animation_cover"
+              >
+                <button type="button" id="play_button">
                   <img src="../assets/icons/Polygon 1.svg" alt="play icon">
                 </button>
               </div>
@@ -178,15 +181,7 @@
               <p>Ver todos jogos</p>
             </div>
           </div>
-          <div class="games" id="games_list">
-            <!-- <div class="last_figure">
-              <img src="../assets/logo-blizzard.png" alt="blizzard icon">
-              <div id="last_figure_text">
-                <img src="../assets/icons/Group 5-white.svg" alt="">
-                <p>Ver todos jogos</p>
-              </div>
-            </div> -->
-          </div>     
+          <div class="games" id="games_list"></div>     
         </div>
 
         <div class="footer">

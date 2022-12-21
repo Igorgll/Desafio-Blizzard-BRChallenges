@@ -1,6 +1,7 @@
 const modal = document.getElementById("modal");
 const closeModal = document.getElementById("close");
 const loginButton = document.getElementById("login_button");
+const overlay = document.querySelector(".modal_overlay");
 const api = "https://api-brchallenges.vercel.app/api/blizzard/games";
 const banner_hero = document.querySelector(".main");
 const game_icons = document.getElementById("game_icons");
@@ -132,15 +133,29 @@ fetch(api)
 
       list.appendChild(figure);
     }
+
+      const last_div = document.createElement('div');
+      last_div.classList.add("last_figure");
+      last_div.innerHTML = '<img src="../assets/logo-blizzard.png" alt="blizzard icon"> <div id="last_figure_text"> <img src="../assets/icons/Group 5-white.svg" alt=""> <p>Ver todos jogos</p>';
+
+      list.appendChild(last_div);
   });
 
-function showModal() {
-  modal.classList.add("active");
-}
+// MODAL
+loginButton.addEventListener("click", () => {
+  modal.style.display = "block";
+  overlay.style.display = "block";
+});
 
-function hideModal() {
-  modal.classList.remove("active");
-}
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
+  overlay.style.display = "none";
+});
+
+overlay.addEventListener("click", () => {
+  modal.style.display = "none";
+  overlay.style.display = "none";
+})
 
 function detectOs() {
   // detects the user os and change the download button accordingly

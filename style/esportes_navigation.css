@@ -75,3 +75,9 @@
 
   padding-left: 10px;
 }
+
+@media (max-width: 1024px) {
+  .esportes_icons ul {
+    gap: 30px;
+  }
+}

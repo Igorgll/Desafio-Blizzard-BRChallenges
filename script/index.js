@@ -17,7 +17,7 @@ const games_list = [
     id: 1,
     background: `radial-gradient(72.28% 72.28% at 52.36% 25.95%, rgba(2, 2, 3, 0) 0%,
       #020203 100%
-    ), url("./assets/banner-hero/games/diablo-bg.png")`,
+    ), url("./assets/banner-hero/games/diablo-bg.jpg")`,
     title: "Retorne à escuridão com o game Diablo IV",
     subtitle: "O retorno de Lilith traz uma era de escuridão e sofrimento",
     button:
@@ -32,7 +32,7 @@ const games_list = [
     id: 2,
     background: `radial-gradient(72.28% 72.28% at 52.36% 25.95%, rgba(2, 2, 3, 0) 0%,
     #020203 100%
-  ), url("./assets/banner-hero/games/hearthstone-bg.png")`,
+  ), url("./assets/banner-hero/games/hearthstone-bg.jpg")`,
     title: "Novo pacote de expansão de Hearthstone",
     subtitle: "A Horda e a Aliança se encontraram no Vale Alterac para lutar",
     button:
@@ -47,7 +47,7 @@ const games_list = [
     id: 3,
     background: `radial-gradient(72.28% 72.28% at 52.36% 25.95%, rgba(2, 2, 3, 0) 0%,
     #020203 100%
-  ), url("./assets/banner-hero/games/wow-bg.png")`,
+  ), url("./assets/banner-hero/games/wow-bg.jpg")`,
     title: "Desbrave as Terras Sombrias em Shadowlands!",
     subtitle: "O que jaz além do mundo que você conhece?",
     button:

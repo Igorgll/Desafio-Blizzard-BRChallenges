@@ -4,6 +4,10 @@
 @import url("../style/games_section.css");
 @import url("../style/footer.css");
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;

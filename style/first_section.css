@@ -207,7 +207,7 @@
 
 @media (max-width: 425px) {
   .container {
-    padding: 0 22px;
+    padding: 0 10px;
     top: 25%;
   }
 
@@ -231,5 +231,9 @@
 @media (max-width: 320px) {
   .first_row ul {
     gap: 10px;
+  }
+
+  #bannerHero_button {
+    font-size: 14px;
   }
 }

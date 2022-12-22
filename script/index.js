@@ -136,7 +136,7 @@ fetch(api)
 
       const last_div = document.createElement('div');
       last_div.classList.add("last_figure");
-      last_div.innerHTML = '<img src="../assets/logo-blizzard.png" alt="blizzard icon"> <div id="last_figure_text"> <img src="../assets/icons/Group 5-white.svg" alt=""> <p>Ver todos jogos</p>';
+      last_div.innerHTML = '<img src="../assets/logo-blizzard.svg" alt="blizzard icon"> <div id="last_figure_text"> <img src="../assets/icons/Group 5-white.svg" alt=""> <p>Ver todos jogos</p>';
 
       list.appendChild(last_div);
   });

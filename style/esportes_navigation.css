@@ -1,0 +1,77 @@
+.esportes_navigation {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(
+    180deg,
+    #020203 0%,
+    rgba(14, 17, 23, 0.92) 96.35%,
+    rgba(14, 17, 23, 0.9) 100%
+  );
+  z-index: 2;
+  position: relative;
+
+  transition: all 0.8s;
+}
+
+.esportes_icons {
+  display: grid;
+  place-items: center;
+  margin-top: 80px;
+  width: 100%;
+  height: auto;
+}
+
+.esportes_icons ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+  list-style: none;
+  gap: 50px;
+}
+
+.esportes_icons ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 176px;
+  height: 237px;
+}
+
+.esportes_icons ul li:hover {
+  background: #020203;
+}
+
+.esportes_icons ul li p {
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  max-width: 105px;
+
+  padding-top: 10px;
+}
+
+.esportes_navigation_footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+
+  background: #15171b;
+}
+
+.esportes_navigation_footer p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white);
+
+  padding-left: 10px;
+}

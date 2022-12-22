@@ -69,7 +69,17 @@
   list-style: none;
   font-weight: 500;
   font-size: 14px;
+
+  cursor: pointer;
   color: var(--white);
+}
+
+.app header li {
+  transition: all 0.4s;
+}
+
+.app header ul li:hover {
+  opacity: 0.8;
 }
 
 .app header li:first-child img {
@@ -109,6 +119,9 @@
 }
 
 #login_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--button);
   transition: ease 0.8s;
 }
@@ -146,9 +159,9 @@
 }
 
 @media (max-width: 768px) {
-.main::before {
-  width: 40%;
-}
+  .main::before {
+    width: 40%;
+  }
 
   header ul {
     display: none !important;

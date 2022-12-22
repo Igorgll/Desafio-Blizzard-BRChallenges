@@ -3,6 +3,8 @@
 @import url("../style/first_section.css");
 @import url("../style/games_section.css");
 @import url("../style/footer.css");
+@import url("../style/jogos_navigation.css");
+@import url("../style/esportes_navigation.css");
 
 html {
   scroll-behavior: smooth;

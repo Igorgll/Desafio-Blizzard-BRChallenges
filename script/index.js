@@ -11,13 +11,42 @@ const button = document.getElementById("bannerHero_button");
 const game_logo_div = document.getElementById("game_logo_div");
 const animation_cover = document.getElementById("animation_cover");
 const play_button = document.getElementById("play_button");
+const jogos_navigation = document.querySelector(".jogos_navigation");
+const esportes_navigation = document.querySelector(".esportes_navigation");
+const header_navigation = document.querySelector("#header");
+
+function show_jogos_navigation() {
+  if (
+    jogos_navigation.style.display === "none" &&
+    esportes_navigation.style.display === "none"
+  ) {
+    header_navigation.style.background = "#030406";
+    jogos_navigation.style.display = "flex";
+  } else {
+    header_navigation.style.background = "";
+    jogos_navigation.style.display = "none";
+  }
+}
+
+function show_esportes_navigation() {
+  if (
+    esportes_navigation.style.display === "none" &&
+    jogos_navigation.style.display === "none"
+  ) {
+    header_navigation.style.background = "#030406";
+    esportes_navigation.style.display = "flex";
+  } else {
+    header_navigation.style.background = "";
+    esportes_navigation.style.display = "none";
+  }
+}
 
 const games_list = [
   {
     id: 1,
     background: `radial-gradient(72.28% 72.28% at 52.36% 25.95%, rgba(2, 2, 3, 0) 0%,
       #020203 100%
-    ), url("./assets/banner-hero/games/diablo-bg.png")`,
+    ), url("./assets/banner-hero/games/diablo-bg.jpg")`,
     title: "Retorne à escuridão com o game Diablo IV",
     subtitle: "O retorno de Lilith traz uma era de escuridão e sofrimento",
     button:
@@ -32,7 +61,7 @@ const games_list = [
     id: 2,
     background: `radial-gradient(72.28% 72.28% at 52.36% 25.95%, rgba(2, 2, 3, 0) 0%,
     #020203 100%
-  ), url("./assets/banner-hero/games/hearthstone-bg.png")`,
+  ), url("./assets/banner-hero/games/hearthstone-bg.jpg")`,
     title: "Novo pacote de expansão de Hearthstone",
     subtitle: "A Horda e a Aliança se encontraram no Vale Alterac para lutar",
     button:
@@ -47,7 +76,7 @@ const games_list = [
     id: 3,
     background: `radial-gradient(72.28% 72.28% at 52.36% 25.95%, rgba(2, 2, 3, 0) 0%,
     #020203 100%
-  ), url("./assets/banner-hero/games/wow-bg.png")`,
+  ), url("./assets/banner-hero/games/wow-bg.jpg")`,
     title: "Desbrave as Terras Sombrias em Shadowlands!",
     subtitle: "O que jaz além do mundo que você conhece?",
     button:
@@ -134,11 +163,12 @@ fetch(api)
       list.appendChild(figure);
     }
 
-      const last_div = document.createElement('div');
-      last_div.classList.add("last_figure");
-      last_div.innerHTML = '<img src="../assets/logo-blizzard.svg" alt="blizzard icon"> <div id="last_figure_text"> <img src="../assets/icons/Group 5-white.svg" alt=""> <p>Ver todos jogos</p>';
+    const last_div = document.createElement("div");
+    last_div.classList.add("last_figure");
+    last_div.innerHTML =
+      '<img src="../assets/logo-blizzard.svg" alt="blizzard icon"> <div id="last_figure_text"> <img src="../assets/icons/Group 5-white.svg" alt=""> <p>Ver todos jogos</p>';
 
-      list.appendChild(last_div);
+    list.appendChild(last_div);
   });
 
 // MODAL
@@ -155,7 +185,7 @@ closeModal.addEventListener("click", () => {
 overlay.addEventListener("click", () => {
   modal.style.display = "none";
   overlay.style.display = "none";
-})
+});
 
 function detectOs() {
   // detects the user os and change the download button accordingly

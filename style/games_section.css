@@ -58,6 +58,7 @@
 .games {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
   width: 100%;
   margin-top: 80px;
   margin-bottom: 75px;
@@ -223,7 +224,7 @@
 
 @media (max-width: 425px) {
   .games_section {
-    padding: 0 22px;
+    padding: 0 10px;
   }
 
   .games {

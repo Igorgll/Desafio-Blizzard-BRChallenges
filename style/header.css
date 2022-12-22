@@ -8,13 +8,6 @@
 }
 
 .main {
-  /* background: radial-gradient(
-      72.28% 72.28% at 52.36% 25.95%,
-      rgba(2, 2, 3, 0) 0%,
-      #020203 100%
-    ),
-    url("../assets/banner-hero/games/diablo-bg.png"); */
-
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -23,6 +16,17 @@
 
   height: 100vh;
   transition: all 1s;
+  position: relative;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 30%;
+  border-bottom: 2px solid var(--button);
 }
 
 .app header {
@@ -33,11 +37,27 @@
 
   background: transparent;
 
-  border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative;
+}
+
+.header_logo {
+  position: relative;
+}
+
+.header_logo::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 68px;
+  height: 2px;
+  width: 43px;
+  border-bottom: 2px solid var(--button);
 }
 
 .app header ul {
@@ -49,7 +69,17 @@
   list-style: none;
   font-weight: 500;
   font-size: 14px;
+
+  cursor: pointer;
   color: var(--white);
+}
+
+.app header li {
+  transition: all 0.4s;
+}
+
+.app header ul li:hover {
+  opacity: 0.8;
 }
 
 .app header li:first-child img {
@@ -89,6 +119,9 @@
 }
 
 #login_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--button);
   transition: ease 0.8s;
 }
@@ -126,6 +159,10 @@
 }
 
 @media (max-width: 768px) {
+  .main::before {
+    width: 40%;
+  }
+
   header ul {
     display: none !important;
   }
@@ -160,14 +197,14 @@
 }
 
 @media (max-width: 425px) {
-  .main {
-    background-position: 43%;
-  }
-
   .main header {
     display: flex;
     justify-content: space-between;
-    padding: 0 22px;
+    padding: 0 10px;
+  }
+
+  .main::before {
+    width: 60%;
   }
 
   .login_buttons {

@@ -23,14 +23,16 @@
   <body>
     <div class="app">
       <div class="main">
-        <header>
-          <img src="../assets/logo-blizzard.svg" alt="Logo Blizzard" />
+        <header id="header">
+          <div class="header_logo">
+            <img src="../assets/logo-blizzard.svg" alt="Logo Blizzard"/>
+          </div>
           <ul>
-            <li>
+            <li onclick="show_jogos_navigation()">
               Jogos
               <img src="../assets/icons/Vector 5.svg" alt="arrow down" />
             </li>
-            <li>
+            <li onclick="show_esportes_navigation()">
               Esportes
               <img src="../assets/icons/Vector 5.svg" alt="arrow down" />
             </li>
@@ -52,6 +54,114 @@
             </button>
           </div>
         </header>
+        <!-- NAVIGATION -->
+        <div class="jogos_navigation" style="display: none;">
+          <div class="jogos_icons">
+            <ul>
+              <li>
+                <img src="./assets/game-icons/diablo-ll.svg" alt="arcade icon">
+                <p>Diablo® ll resurrected</p>
+              </li>
+              <li>
+                <img src="./assets/game-icons/ow2.svg" alt="overwatch 2 icon">
+                <p>Overwatch® 2</p>
+              </li>
+              <li>
+                <img src="./assets/game-icons/wow.svg" alt="wow icon">
+                <p>World of Warcraft®</p>
+              </li>
+              <li>
+                <img src="./assets/game-icons/hs.svg" alt="hs icon">
+                <p>Hearthstone®</p>
+              </li>
+              <li>
+                <img src="./assets/game-icons/hos.svg" alt="hos icon">
+                <p>Heroes of the storm®</p>
+              </li>
+              <li>
+                <img src="./assets/game-icons/wow-lll.svg" alt="wow lll icon">
+                <p>Warcraft® III Reforged</p>
+              </li>
+              <li>
+                <img src="./assets/game-icons/game-1.svg" alt="arcade icon">
+                <p>Diablo® IV</p>
+              </li>
+              <li>
+                <img src="./assets/game-icons/diablo.svg" alt="diablo icon">
+                <p>Diablo® Immortal</p>
+              </li>
+              <li>
+                <img src="./assets/game-icons/diablo-lll.svg" alt="diablo lll icon">
+                <p>Diablo® III</p>
+              </li>
+              <li>
+                <img src="./assets/game-icons/starcraft-ll.svg" alt="starcraft ll icon">
+                <p>StarCraft® II</p>
+              </li>
+              <li>
+                <img src="./assets/game-icons/starcraft-remastered.svg" alt="starcraft remastered icon">
+                <p>StarCraft® Remastered</p>
+              </li>
+              <li>
+                <img src="./assets/game-icons/arcade.svg" alt="arcade icon">
+                <p>Arcade da Blizzard®</p>
+              </li>
+            </ul>
+          </div>
+          <div class="navigation_footer">
+            <ul>
+              <li>
+                <img src="./assets/icons/Group 5.svg" alt="">
+                Ver todos jogos
+              </li>
+              <li>
+                <img src="./assets/icons/icon-logo-blue.svg" alt="">
+                Aplicativo Battle.net
+              </li>
+              <li>
+                <img src="./assets/icons/download-icon.svg" alt="">
+                Downloads
+              </li>
+              <li>
+                <img src="./assets/icons/bublle.svg" alt="">
+                Fóruns dos jogos
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ESPORTES NAVIGATION -->
+                <div class="esportes_navigation" style="display: none;">
+                  <div class="esportes_icons">
+                    <ul>
+                      <li>
+                        <img src="./assets/game-icons/hsm.svg" alt="arcade icon">
+                        <p>Diablo® ll resurrected</p>
+                      </li>
+                      <li>
+                        <img src="./assets/game-icons/cmaw.svg" alt="overwatch 2 icon">
+                        <p>Overwatch® 2</p>
+                      </li>
+                      <li>
+                        <img src="./assets/game-icons/wcs.svg" alt="wow icon">
+                        <p>World of Warcraft®</p>
+                      </li>
+                      <li>
+                        <img src="./assets/game-icons/cmovw.svg" alt="hs icon">
+                        <p>Hearthstone®</p>
+                      </li>
+                      <li>
+                        <img src="./assets/game-icons/lovw.svg" alt="hos icon">
+                        <p>Heroes of the storm®</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="esportes_navigation_footer">
+                      <img src="./assets/icons/trophy.svg" alt="">
+                      <p>Torneios da comunidade</p>
+                  </div>
+                </div>
+
         <!-- LOGIN MODAL -->
       <div class="modal_overlay"></div>
         <section id="modal" class="modal">
@@ -60,7 +170,7 @@
               <span id="close">&times;</span>
             </div>
             <div class="battlenet_logo">
-              <img src="../assets/logo-battle-net.png" alt="" />
+              <img src="../assets/logo-battle-net.svg" alt="" />
             </div>
             <form>
               <input

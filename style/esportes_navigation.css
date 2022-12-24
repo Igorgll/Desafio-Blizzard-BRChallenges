@@ -1,6 +1,6 @@
 .esportes_navigation {
   position: fixed;
-  top: -150%;
+  top: -1420px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -20,7 +20,7 @@
 
 .esportes_navigation.fadeDown {
   display: flex;
-  top: -74%;
+  top: -720px;
 }
 
 .esportes_icons {
@@ -83,27 +83,13 @@
   padding-left: 10px;
 }
 
-@media (max-width: 1440px) {
-  .esportes_navigation {
-    top: -170%;
-  }
-
-  .esportes_navigation.fadeDown {
-    top: -85.5%;
-  }
-}
-
 @media (max-width: 1024px) {
   .esportes_icons ul {
     gap: 30px;
   }
 
-  .esportes_navigation {
-    top: -160%;
-  }
-
   .esportes_navigation.fadeDown {
-    top: -76%;
+    top: -640px;
   }
 }
 

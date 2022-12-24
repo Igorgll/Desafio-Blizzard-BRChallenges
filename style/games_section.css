@@ -64,10 +64,6 @@
   margin-bottom: 75px;
 }
 
-.games figure {
-  padding-left: 8px;
-}
-
 .games figure img {
   z-index: 1;
 }
@@ -126,6 +122,7 @@
   align-items: center;
   justify-content: center;
   margin-left: 8px;
+  margin-bottom: 116px;
 }
 
 #last_figure_text {
@@ -154,6 +151,7 @@
   .last_figure {
     width: 280px;
     height: 385.11px;
+    margin-left: 0;
   }
 
   .game_pics {
@@ -229,6 +227,11 @@
 
   .games {
     grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+
+  .games figure {
+    padding-left: 22px;
   }
 
   .titles ul {
@@ -261,6 +264,8 @@
   .last_figure {
     width: 158.88px;
     height: 217.55px;
+    margin-bottom: 20px;
+    margin-left: 0;
   }
 
   .last_figure img {
@@ -284,16 +289,13 @@
 @media (max-width: 375px) {
   .games figure {
     width: 170px;
+    padding-left: 6px;
   }
 }
 
 @media (max-width: 320px) {
   .games {
     grid-template-columns: 1fr;
-  }
-
-  .games figure {
-    padding-left: 60px;
   }
 
   .last_figure {
@@ -306,5 +308,9 @@
 
   .titles h4 {
     font-size: 22px;
+  }
+
+  .last_figure {
+    margin-left: 0;
   }
 }

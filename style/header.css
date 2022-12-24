@@ -29,6 +29,10 @@
   border-bottom: 2px solid var(--button);
 }
 
+#header.blueish-bg {
+  background-color: #030406;
+}
+
 .app header {
   width: 100%;
   height: 96px;
@@ -43,6 +47,8 @@
   flex-direction: row;
   align-items: center;
   position: relative;
+
+  transition: all 0.3s ease-in 0s;
 }
 
 .header_logo {
@@ -75,6 +81,8 @@
 }
 
 .app header li {
+  display: flex;
+  align-items: center;
   transition: all 0.4s;
 }
 
@@ -82,12 +90,24 @@
   opacity: 0.8;
 }
 
-.app header li:first-child img {
+.app header li:first-child i {
+  padding-top: 2px;
   margin-left: 0.7rem;
 }
 
-.app header li:nth-child(2) img {
+.app header li:nth-child(2) i {
+  padding-top: 2px;
   margin-left: 0.7rem;
+}
+
+.fa-chevron-down {
+  color: var(--white);
+  opacity: 0.6;
+}
+
+.fa-chevron-up {
+  color: var(--button);
+  opacity: 1;
 }
 
 .login_buttons {
@@ -209,17 +229,5 @@
 
   .login_buttons {
     display: none;
-  }
-}
-
-@media (max-width: 375px) {
-  .main {
-    background-position: 43%;
-  }
-}
-
-@media (max-width: 320px) {
-  .main {
-    background-position: 46%;
   }
 }

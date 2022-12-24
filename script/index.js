@@ -14,30 +14,26 @@ const play_button = document.getElementById("play_button");
 const jogos_navigation = document.querySelector(".jogos_navigation");
 const esportes_navigation = document.querySelector(".esportes_navigation");
 const header_navigation = document.querySelector("#header");
+const jogos_arrow = document.getElementById("jogos_arrow");
+const esportes_arrow = document.getElementById("esportes_arrow");
 
 function show_jogos_navigation() {
-  if (
-    jogos_navigation.style.display === "none" &&
-    esportes_navigation.style.display === "none"
-  ) {
-    header_navigation.style.background = "#030406";
-    jogos_navigation.style.display = "flex";
+  if (esportes_navigation.classList.contains("fadeDown")) {
+    return;
   } else {
-    header_navigation.style.background = "";
-    jogos_navigation.style.display = "none";
+    header_navigation.classList.toggle("blueish-bg");
+    jogos_arrow.classList.toggle("fa-chevron-up");
+    jogos_navigation.classList.toggle("fade");
   }
 }
 
 function show_esportes_navigation() {
-  if (
-    esportes_navigation.style.display === "none" &&
-    jogos_navigation.style.display === "none"
-  ) {
-    header_navigation.style.background = "#030406";
-    esportes_navigation.style.display = "flex";
+  if (jogos_navigation.classList.contains("fade")) {
+    return;
   } else {
-    header_navigation.style.background = "";
-    esportes_navigation.style.display = "none";
+    header_navigation.classList.toggle("blueish-bg");
+    esportes_arrow.classList.toggle("fa-chevron-up");
+    esportes_navigation.classList.toggle("fadeDown");
   }
 }
 

@@ -149,20 +149,20 @@
   padding-left: 5px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1441px) {
   .container {
     padding: 0 130px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .container {
     padding: 0 50px;
     grid-template-columns: 140px 2fr 1fr;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .container {
     width: 100%;
     display: flex;
@@ -206,7 +206,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .container {
     padding: 0 10px;
     top: 25%;
@@ -229,7 +229,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 321px) {
   .first_row ul {
     gap: 10px;
   }

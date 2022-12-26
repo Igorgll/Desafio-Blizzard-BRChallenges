@@ -83,7 +83,7 @@
   padding-left: 10px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .esportes_icons ul {
     gap: 30px;
   }
@@ -93,7 +93,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .esportes_navigation {
     display: none;
   }
